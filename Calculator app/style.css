@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: azure;
+}
+
+
+.claculator-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.calculator{
+   
+    width: 25%;
+    margin: auto;
+}
+
+.histroy-display{
+  width: 200px;
+  height: 100px;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding:5px 5px;
+  display: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+
+  
+}
+.histroy-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.histroy-wrapper ul{
+    padding-left: 5px;
+}
+.histroy-wrapper img{
+       margin-right: 10px;
+}
+
+#all-clear{
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.numbers{
+    flex: 30%;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 105px;
+    background-color: #fff;
+    color: #000;
+    border:1px solid #000 ;
+    margin-bottom: 5px;  
+    text-align: right;
+}
+.input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+}
+button{
+    cursor: pointer;
+    background-color: #000;
+   color: #ffffff;
+    font-size: 20;
+    border: 1px solid #fff;
+    padding: 30px 30px ;
+}
+button:focus{
+    background-color: #fff;
+    color: #000;
+}
+.histroy-container{
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.histroy{
+    font-size: 15px;
+    color: #AAA6A6;
+}
+.output{
+    font-size: 20px;
+    font-weight: 300 ;
+    padding: 0px 5px;
+}
+.result{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 5px;
+
+}
+.arrow,.delete-icon{
+    margin-left: 5px;
+    max-width: 10px;
+    height: auto;
+    align-content: center;
+    cursor: pointer;
+}
+.cancel{
+    max-width: 40px;
+    height: auto;
+}
+.cancel:hover{
+    transform: scale(1.1);
+}
+
+.delete-icon:hover,.arrow:hover{
+    transform: scale(1.2);
+}
+.histroy-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.active{
+    display: block;
+
+}
