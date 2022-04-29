@@ -56,6 +56,7 @@ function calculation() {
             
             let li = document.createElement("li");
             li.setAttribute('id', results);
+            li.setAttribute('style' , "float:left");
             li.appendChild(document.createTextNode(output.innerText+''+ '='+''+ results));
             ul.appendChild(li);
 
