@@ -50,7 +50,7 @@ function calculation() {
             
             let li = document.createElement("li");
             li.setAttribute('id', results);
-            li.appendChild(document.createTextNode(results));
+            li.appendChild(document.createTextNode(output.innerText+''+ '='+''+ results));
             ul.appendChild(li);
 
         }
