@@ -41,9 +41,9 @@ function calculation() {
  
     if (buttonText === "=") {
         result.innerText = eval(output.innerText);
-        histroy.innerText = result.innerText;
         let results = result.innerText;
-
+        histroy.innerText = output.innerText+''+ '='+''+ results;
+     
         addhistroy();
 
         function addhistroy() {
