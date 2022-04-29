@@ -36,7 +36,13 @@ function calculation() {
     let buttonText = this.innerText;
     console.log(buttonText);
      
-        
+           
+     
+    if(buttonText === "DEL" ){
+        output.textContent = output.textContent.substring(0, (output.textContent.length-1));
+        return;
+
+    }
         
  
     if (buttonText === "=") {
